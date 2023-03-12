@@ -1,0 +1,80 @@
+body {
+  font-family: "Rubik", sans-serif;
+
+  background-color: #f4f0e5;
+}
+
+.containet {
+  max-width: 65rem;
+  padding: 0 1rem;
+  margin: 2rem auto;
+}
+
+.bayan__title {
+  font-size: 4rem;
+  line-height: 1.16;
+}
+
+.bayan__block {
+  border-top: 0.06rem solid #96999a;
+}
+
+.bayan__input {
+  display: none;
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-img {
+  height: 30rem;
+  padding: 0 0 2rem 0;
+  transition: height 0.3s ease 0s;
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-text > .icon {
+  transform: rotate(45deg);
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-text > .bayan__text {
+  color: #000;
+}
+
+.bayan__label {
+  display: block;
+  cursor: pointer;
+}
+
+.bayan__block-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.bayan__text {
+  font-size: 2rem;
+  line-height: 1.16;
+  color: #3678be;
+
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+  display: none;
+
+  width: 2rem;
+  height: 2rem;
+
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bayan__block-img {
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bayan__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
