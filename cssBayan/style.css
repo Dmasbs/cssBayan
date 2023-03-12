@@ -1,0 +1,144 @@
+body {
+  font-family: "Rubik", sans-serif;
+
+  background-color: #f4f0e5;
+}
+
+.containet {
+  max-width: 55rem;
+  padding: 0 1rem;
+  margin: 2rem auto;
+}
+
+.bayan__title {
+  font-size: 3rem;
+  line-height: 1.16;
+}
+
+.bayan__block {
+}
+
+.bayan__input {
+  display: none;
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-img {
+  height: 30rem;
+  padding: 0 0 2rem 0;
+  transition: height 0.3s ease 0s;
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-text > .icon {
+  transform: rotate(45deg);
+}
+
+.bayan__input:checked + .bayan__label > .bayan__block-text > .bayan__text {
+  color: #000;
+}
+
+.bayan__label {
+  display: block;
+  cursor: pointer;
+  border-top: 0.06rem solid #96999a;
+}
+
+.bayan__block:active .bayan__label > .bayan__block-text > .bayan__text,
+.bayan__block:active .bayan__label > .bayan__block-img {
+  color: #3678be;
+  opacity: 0.8;
+}
+
+.bayan__label:active > .bayan__block-text > .icon {
+  fill: #3678be;
+}
+
+.bayan__block-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+}
+
+.bayan__text {
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #3678be;
+
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+  display: none;
+
+  width: 1.2rem;
+  height: 1.2rem;
+
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bayan__block-img {
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.bayan__img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (hover: hover) {
+  .bayan__input:hover + .bayan__label > .bayan__block-img {
+    height: 30rem;
+    padding: 0 0 2rem 0;
+    transition: height 0.3s ease 0s;
+  }
+
+  .bayan__input:hover + .bayan__label > .bayan__block-text > .icon {
+    transform: rotate(45deg);
+  }
+
+  .bayan__section:hover .bayan__text {
+    color: #000;
+  }
+
+  .bayan__section:hover .icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  .bayan__title {
+    font-size: 2.5rem;
+  }
+
+  .bayan__text {
+    font-size: 1.5rem;
+  }
+
+  .bayan__block-text {
+    padding: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .bayan__title {
+    font-size: 1.7rem;
+  }
+
+  .bayan__text {
+    font-size: 1.2rem;
+  }
+
+  .bayan__block-text {
+    padding: 0.7rem;
+  }
+
+  .bayan__input:checked + .bayan__label > .bayan__block-img {
+    height: 19rem;
+  }
+}
