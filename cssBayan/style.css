@@ -42,12 +42,22 @@ body {
   border-top: 0.06rem solid #96999a;
 }
 
+.bayan__block:active .bayan__label > .bayan__block-text > .bayan__text,
+.bayan__block:active .bayan__label > .bayan__block-img {
+  color: #3678be;
+  opacity: 0.8;
+}
+
+.bayan__label:active > .bayan__block-text > .icon {
+  fill: #3678be;
+}
+
 .bayan__block-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .bayan__text {
@@ -126,5 +136,9 @@ body {
 
   .bayan__block-text {
     padding: 0.7rem;
+  }
+
+  .bayan__input:checked + .bayan__label > .bayan__block-img {
+    height: 19rem;
   }
 }
