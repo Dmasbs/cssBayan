@@ -5,13 +5,13 @@ body {
 }
 
 .containet {
-  max-width: 65rem;
+  max-width: 55rem;
   padding: 0 1rem;
   margin: 2rem auto;
 }
 
 .bayan__title {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.16;
 }
 
@@ -47,11 +47,11 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .bayan__text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.16;
   color: #3678be;
 
@@ -61,8 +61,8 @@ body {
 .icon {
   display: none;
 
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
 
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -101,20 +101,28 @@ body {
 
 @media screen and (max-width: 1179px) {
   .bayan__title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .bayan__text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .bayan__block-text {
+    padding: 0.9rem;
   }
 }
 
 @media screen and (max-width: 567px) {
   .bayan__title {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 
   .bayan__text {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+  }
+
+  .bayan__block-text {
+    padding: 0.7rem;
   }
 }
