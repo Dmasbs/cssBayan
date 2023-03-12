@@ -98,3 +98,27 @@ body {
     display: block;
   }
 }
+
+@media screen and (max-width: 1179px) {
+  .bayan__section .icon {
+    display: block;
+  }
+
+  .bayan__title {
+    font-size: 3rem;
+  }
+
+  .bayan__text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .bayan__title {
+    font-size: 2.4rem;
+  }
+
+  .bayan__text {
+    font-size: 1.7rem;
+  }
+}
