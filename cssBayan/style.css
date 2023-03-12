@@ -16,7 +16,6 @@ body {
 }
 
 .bayan__block {
-  border-top: 0.06rem solid #96999a;
 }
 
 .bayan__input {
@@ -40,6 +39,7 @@ body {
 .bayan__label {
   display: block;
   cursor: pointer;
+  border-top: 0.06rem solid #96999a;
 }
 
 .bayan__block-text {
@@ -71,6 +71,8 @@ body {
   height: 0;
   overflow: hidden;
   text-align: center;
+
+  transition: all 0.3s ease;
 }
 
 .bayan__img {
