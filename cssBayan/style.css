@@ -78,3 +78,23 @@ body {
   width: 100%;
   object-fit: contain;
 }
+
+@media (hover: hover) {
+  .bayan__input:hover + .bayan__label > .bayan__block-img {
+    height: 30rem;
+    padding: 0 0 2rem 0;
+    transition: height 0.3s ease 0s;
+  }
+
+  .bayan__input:hover + .bayan__label > .bayan__block-text > .icon {
+    transform: rotate(45deg);
+  }
+
+  .bayan__section:hover .bayan__text {
+    color: #000;
+  }
+
+  .bayan__section:hover .icon {
+    display: block;
+  }
+}
