@@ -100,10 +100,6 @@ body {
 }
 
 @media screen and (max-width: 1179px) {
-  .bayan__section .icon {
-    display: block;
-  }
-
   .bayan__title {
     font-size: 3rem;
   }
